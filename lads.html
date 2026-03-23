@@ -9,16 +9,19 @@
 
 /* Bigger image */
 .large-image {
-  width: 320px;
-  height: auto;
+  width: 420px;        /* makes it wider */
+  height: auto;        /* keeps full image (no cropping) */
   border-radius: 12px;
+  object-fit: contain; /* VERY IMPORTANT: prevents cutting */
 }
 
 /* Push image slightly lower */
 .side-image {
-  margin-top: 60px;
+  margin-top: 80px;  /* aligns better with bullets */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 /* Caption styling */
 .image-caption {
   font-size: 0.8rem;
