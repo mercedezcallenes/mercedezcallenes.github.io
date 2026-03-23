@@ -1,77 +1,281 @@
-<!-- Curriculum Overview WITH image on the right -->
-<div class="section reverse">
-  <div class="text">
-    <h2>Curriculum Overview</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LADS | Mercedez Callenes</title>
 
-    <p><strong>Required Core Courses</strong></p>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f1ee;
+      color: #111;
+    }
 
-    <ul>
-      <li>POLS 215 – Gender, Politics and Development in Latin America</li>
-      <li>POLS 230 – Exploring Latin American Politics</li>
-    </ul>
+    .page {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 48px 36px 60px;
+    }
 
-    <p><strong>Plus four elective courses from different disciplines</strong></p>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 42px;
+    }
 
-    <p>
-      Students customize the minor by choosing four elective courses from several disciplines. Options in History explore colonial legacies, migration, race, and political change in Latin America. Courses in Global Affairs, Public Policy, and Economics examine development theory, governance, globalization, inequality, and structural reform.
-    </p>
+    h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: 500;
+    }
 
-    <p>
-      Spanish and language courses strengthen cultural competency, while literature, art, and humanities courses deepen understanding of identity, culture, and representation.
-    </p>
+    h2 {
+      margin: 0 0 14px 0;
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
 
-    <p>
-      Many electives also fulfill Trinity General Studies requirements, allowing students to advance multiple academic goals while preparing for ethical leadership and meaningful engagement with development challenges in Latin America.
-    </p>
-  </div>
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-family: Arial, sans-serif;
+    }
 
-  <div class="image">
-    <img src="lads1.jpg" alt="Democracy feminist movement">
-    <div class="caption">
-      Pro-democracy feminist demonstration which commemorated victims of the dictatorship, 1983<br>
-      Photo: Kena Lorenzini. Biblioteca Nacional de Chile
+    nav a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      gap: 34px;
+      margin-bottom: 56px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .text p,
+    .text ul {
+      line-height: 1.8;
+      margin-top: 0;
+    }
+
+    .text ul {
+      padding-left: 24px;
+      margin-bottom: 18px;
+    }
+
+    .media {
+      flex: 0 0 240px;
+      text-align: center;
+    }
+
+    .media img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 0.82rem;
+      line-height: 1.35;
+      font-style: italic;
+      color: #5f5f5f;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        flex-direction: column;
+      }
+
+      .section,
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      .media {
+        flex: none;
+      }
+
+      .media img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <h1>LADS Minor</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="research.html">Research</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- 1: image right -->
+    <div class="section reverse">
+      <div class="text">
+        <h2>Latin American Development Studies Minor</h2>
+
+        <p>
+          Latin America provides one of the most dynamic and revealing regions in which to study development. From democratic transitions and social movements to environmental crises and innovative policy reforms, the region offers powerful lessons about resilience, inequality, and institutional change.
+        </p>
+
+        <p>
+          In this minor, students develop analytical tools to move beyond description and toward explanation. They engage complex questions about power, policy, geography, and justice while becoming part of a community dedicated to thoughtful scholarship and meaningful impact.
+        </p>
+      </div>
+
+      <div class="media">
+        <img src="lads.jpg" alt="Sugar Cane, Diego Rivera, 1931">
+        <div class="caption">Sugar Cane, Diego Rivera, 1931</div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Career Pathways -->
-<div class="section">
-  <div class="text">
-    <h2>Career Pathways</h2>
+    <!-- 2: image left -->
+    <div class="section">
+      <div class="media">
+        <img src="lads1.jpg" alt="Pro-democracy feminist demonstration">
+        <div class="caption">
+          Pro-democracy feminist demonstration which commemorated victims of the dictatorship, 1983<br>
+          Photo: Kena Lorenzini. Biblioteca Nacional de Chile
+        </div>
+      </div>
 
-    <p>
-      Graduates of the minor are well prepared for careers and graduate study in:
-    </p>
+      <div class="text">
+        <h2>Why Choose This Minor?</h2>
 
-    <ul>
-      <li>International development organizations</li>
-      <li>Public policy and government service</li>
-      <li>Nonprofit and humanitarian sectors</li>
-      <li>Human rights advocacy</li>
-      <li>Law, public policy, global affairs, or development studies programs</li>
-      <li>Community organizing and grassroots advocacy focused on equity, immigration, environmental justice, and social services</li>
-    </ul>
-  </div>
-</div>
+        <p>
+          Rooted in Trinity’s commitment to social justice, ethical leadership, and global engagement, this program challenges students to critically examine inequality, migration, democratization, sustainability, indigenous rights, gender dynamics, urbanization, and economic transformation.
+        </p>
 
-<!-- Final section with lads2 on RIGHT + NEW legend -->
-<div class="section reverse">
-  <div class="text">
-    <h2>Explore Development, Justice, and Social Change in Latin America</h2>
+        <ul>
+          <li>Analyze structural inequality and poverty</li>
+          <li>Understand migration and transnational connections</li>
+          <li>Evaluate development models and public policy</li>
+          <li>Explore environmental sustainability and climate challenges</li>
+          <li>Engage issues of gender, race, and indigenous rights</li>
+        </ul>
 
-    <p>
-      This minor invites students to engage major debates about democracy, inequality, sustainability, and human rights with rigor, compassion, and intellectual curiosity.
-    </p>
-
-    <p>
-      Students learn not only to understand development challenges, but also to ask why countries facing similar structural problems produce different outcomes and what those differences mean for policy, equity, and human dignity.
-    </p>
-  </div>
-
-  <div class="image">
-    <img src="lads2.jpg" alt="Mujer Revolución Nicaragua">
-    <div class="caption">
-      Photographs by Margaret Randall and others (American, c. 1936). Published by Taller de Gráfica Experimental Nicaragua (founded 1980) for Asociación de Mujeres Nicaragüenses Luisa Amanda Espinoza (AMNLAE). Mujer Revolución, 19 July, 1981. Offset lithograph newspaper. Gift of John Ryder.
+        <p>
+          Students gain strong comparative research skills applicable to both Latin America and broader global development contexts.
+        </p>
+      </div>
     </div>
+
+    <div class="section">
+      <div class="text">
+        <h2>Curriculum Overview</h2>
+
+        <p><strong>Required Core Courses</strong></p>
+
+        <ul>
+          <li>POLS 215 – Gender, Politics and Development in Latin America</li>
+          <li>POLS 230 – Exploring Latin American Politics</li>
+        </ul>
+
+        <p><strong>Plus four elective courses from different disciplines</strong></p>
+
+        <p>
+          Students customize the minor by choosing four elective courses from several disciplines. Options in History explore colonial legacies, migration, race, and political change in Latin America. Courses in Global Affairs, Public Policy, and Economics examine development theory, governance, globalization, inequality, and structural reform.
+        </p>
+
+        <p>
+          Spanish and language courses strengthen cultural competency, while literature, art, and humanities courses deepen understanding of identity, culture, and representation.
+        </p>
+
+        <p>
+          Many electives also fulfill Trinity General Studies requirements, allowing students to advance multiple academic goals while preparing for ethical leadership and meaningful engagement with development challenges in Latin America.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="text">
+        <h2>Career Pathways</h2>
+
+        <p>
+          Graduates of the minor are well prepared for careers and graduate study in:
+        </p>
+
+        <ul>
+          <li>International development organizations</li>
+          <li>Public policy and government service</li>
+          <li>Nonprofit and humanitarian sectors</li>
+          <li>Human rights advocacy</li>
+          <li>Law, public policy, global affairs, or development studies programs</li>
+          <li>Community organizing and grassroots advocacy focused on equity, immigration, environmental justice, and social services</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3: image right -->
+    <div class="section reverse">
+      <div class="text">
+        <h2>Explore Development, Justice, and Social Change in Latin America</h2>
+
+        <p>
+          This minor invites students to engage major debates about democracy, inequality, sustainability, and human rights with rigor, compassion, and intellectual curiosity.
+        </p>
+
+        <p>
+          Students learn not only to understand development challenges, but also to ask why countries facing similar structural problems produce different outcomes and what those differences mean for policy, equity, and human dignity.
+        </p>
+      </div>
+
+      <div class="media">
+        <img src="lads2.jpg" alt="Mujer Revolución Nicaragua">
+        <div class="caption">
+          Photographs by Margaret Randall and others (American, c. 1936). Published by Taller de Gráfica Experimental Nicaragua (founded 1980) for Asociación de Mujeres Nicaragüenses Luisa Amanda Espinoza (AMNLAE). Mujer Revolución, 19 July, 1981. Offset lithograph newspaper. Gift of John Ryder.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="text">
+        <h2>Get in Touch</h2>
+
+        <p>
+          Latin America continues to shape global debates about democracy, inequality, sustainability, and human rights. The Minor in Latin American Development Studies invites you to engage these debates with rigor, compassion, and intellectual curiosity.
+        </p>
+
+        <p>
+          For advising information, course planning, or program details, please contact me. 
+        </p>
+      </div>
+    </div>
+
   </div>
-</div>
+</body>
+</html>
