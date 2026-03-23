@@ -1,4 +1,146 @@
-<h1>LADS Minor</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LADS Minor</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f3f1ee;
+  color: #111;
+}
+
+.page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 48px 36px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 70px;
+  align-items: flex-start;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  line-height: 1.7;
+}
+
+.image {
+  flex: 0 0 320px;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;          /* keeps full image */
+  object-fit: contain;   /* prevents cropping */
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 6px;
+  color: #555;
+}
+
+/* special for the protest image */
+.large {
+  flex: 0 0 500px;
+}
+
+.large img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;   /* CRITICAL: no cropping */
+}
+
+ul {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .section,
+  .section.reverse {
+    flex-direction: column;
+  }
+
+  .image,
+  .large {
+    flex: none;
+  }
+
+  .image img,
+  .large img {
+    max-width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<header>
+  <h1>LADS Minor</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="research.html">Research</a>
+    <a href="cv.pdf" target="_blank">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
 <!-- SECTION 1 -->
 <div class="section reverse">
@@ -15,14 +157,14 @@
   </div>
 
   <div class="image">
-    <img src="lads.jpg" alt="Sugar Cane, Diego Rivera, 1931">
+    <img src="lads.jpg" alt="Sugar Cane">
     <div class="caption">Sugar Cane, Diego Rivera, 1931</div>
   </div>
 </div>
 
-<!-- SECTION 2 (WIDE IMAGE LEFT) -->
+<!-- SECTION 2 -->
 <div class="section">
-  <div class="image wide-image">
+  <div class="image large">
     <img src="lads1.jpg" alt="Pro-democracy feminist demonstration">
     <div class="caption">
       Pro-democracy feminist demonstration which commemorated victims of the dictatorship, 1983<br>
@@ -44,6 +186,10 @@
       <li>Explore environmental sustainability and climate challenges</li>
       <li>Engage issues of gender, race, and indigenous rights</li>
     </ul>
+
+    <p>
+      Students gain strong comparative research skills applicable to both Latin America and broader global development contexts.
+    </p>
   </div>
 </div>
 
@@ -100,3 +246,8 @@
     </ul>
   </div>
 </div>
+
+</div>
+
+</body>
+</html>
