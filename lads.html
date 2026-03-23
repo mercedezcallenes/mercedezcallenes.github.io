@@ -3,168 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LADS | Mercedez Callenes</title>
+<title>LADS Minor</title>
 
 <style>
-
-/* Bigger image */
-.large-image {
-  width: 420px;        /* makes it wider */
-  height: auto;        /* keeps full image (no cropping) */
-  border-radius: 12px;
-  object-fit: contain; /* VERY IMPORTANT: prevents cutting */
-}
-
-/* Push image slightly lower */
-.side-image {
-  margin-top: 80px;  /* aligns better with bullets */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* Caption styling */
-.image-caption {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #666;
-  margin-top: 8px;
-  line-height: 1.4;
-}  
-.image-block {
-  text-align: center;
-}
-
-.image-caption {
-  font-size: 0.85rem;
-  font-family: Arial, sans-serif;
-  color: #666;
-  margin-top: 8px;
-}
-  
-  body {
-  margin: 0;
+body {
   font-family: Georgia, serif;
   background: #f3f1ee;
   color: #111;
+  margin: 0;
 }
 
 .page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 48px 36px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 40px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 30px;
 }
 
 h1 {
-  margin: 0;
-  font-weight: 500;
-}
-
-nav {
-  display: flex;
-  gap: 24px;
-  font-family: Arial, sans-serif;
-}
-
-nav a {
-  text-decoration: none;
-  color: #111;
-}
-
-.section-split {
-  display: flex;
-  gap: 36px;
-  margin-bottom: 60px;
-}
-
-.section-split.reverse {
-  flex-direction: row-reverse;
-}
-
-.section-image {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.section-text {
-  flex: 1;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
 }
 
-p {
-  line-height: 1.8;
+.section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
 }
 
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* WIDE IMAGE (second one) */
+.wide-image img {
+  width: 100%;
+  max-width: 520px;   /* makes it wider */
+  height: auto;
+  border-radius: 6px;
+}
+
+/* bullets spacing */
 ul {
-  line-height: 1.8;
+  margin-top: 15px;
+  line-height: 1.6;
 }
 
-@media (max-width: 800px) {
-  .section-split,
-  .section-split.reverse {
-    flex-direction: column;
-  }
+nav {
+  text-align: right;
+  margin-bottom: 30px;
 }
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 </style>
 </head>
 
 <body>
+
 <div class="page">
 
-<header>
-  <h1>LADS Minor</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="research.html">Research</a>
+  <a href="cv.pdf" target="_blank">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="research.html">Research</a>
-    <a href="cv.pdf" target="_blank">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<h1>LADS Minor</h1>
 
-<!-- INTRO (IMAGE LEFT) -->
-<div class="section-split">
- <div class="image-block">
-  <img src="lads.jpg" class="section-image">
-  <div class="image-caption">
-    Sugar Cane, Diego Rivera, 1931
-  </div>
-</div>
-
-  <div class="section-text">
+<!-- SECTION 1 (IMAGE ON RIGHT) -->
+<div class="section reverse">
+  
+  <div class="text">
     <h2>Latin American Development Studies Minor</h2>
-
+    
     <p>
-      Latin America provides one of the most dynamic and revealing regions in which to study development. From democratic transitions and social movements to environmental crises and innovative policy reforms, the region offers powerful lessons about resilience, inequality, and institutional change.
+    Latin America provides one of the most dynamic and revealing regions in which to study development. From democratic transitions and social movements to environmental crises and innovative policy reforms, the region offers powerful lessons about resilience, inequality, and institutional change.
     </p>
 
     <p>
-      In this minor, students develop analytical tools to move beyond description and toward explanation. They engage complex questions about power, policy, geography, and justice while becoming part of a community dedicated to thoughtful scholarship and meaningful impact.
+    In this minor, students develop analytical tools to move beyond description and toward explanation. They engage complex questions about power, policy, geography, and justice while becoming part of a community dedicated to thoughtful scholarship and meaningful impact.
     </p>
   </div>
+
+  <div class="image">
+    <img src="lads.jpg">
+    <div class="caption">Sugar Cane, Diego Rivera, 1931</div>
+  </div>
+
 </div>
 
-<!-- WHY CHOOSE (IMAGE RIGHT) -->
-<div class="section-split reverse">
+<!-- SECTION 2 (WHY CHOOSE + WIDE IMAGE) -->
+<div class="section">
 
-  <div class="section-text">
+  <div class="image wide-image">
+    <img src="lads1.jpg">
+    <div class="caption">
+      Pro-democracy feminist demonstration which commemorated victims of the dictatorship, 1983<br>
+      Photo: Kena Lorenzini. Biblioteca Nacional de Chile
+    </div>
+  </div>
+
+  <div class="text">
     <h2>Why Choose This Minor?</h2>
 
     <p>
-      Rooted in Trinity’s commitment to social justice, ethical leadership, and global engagement, this program challenges students to critically examine inequality, migration, democratization, sustainability, indigenous rights, gender dynamics, urbanization, and economic transformation.
+    Rooted in Trinity’s commitment to social justice, ethical leadership, and global engagement, this program challenges students to critically examine inequality, migration, democratization, sustainability, indigenous rights, gender dynamics, urbanization, and economic transformation.
     </p>
 
     <ul>
@@ -176,67 +159,30 @@ ul {
     </ul>
   </div>
 
-  <!-- IMAGE BLOCK -->
-  <div class="image-block side-image">
-    <img src="lads1.jpg" class="section-image large-image">
-
-    <div class="image-caption">
-      Pro-democracy feminist demonstration which commemorated victims of the dictatorship, 1983<br>
-      Photo: Kena Lorenzini. Biblioteca Nacional de Chile
-    </div>
-  </div>
-
 </div>
 
-<!-- CURRICULUM -->
-<div class="section">
-  <h2>Curriculum Overview</h2>
+<!-- SECTION 3 -->
+<div class="section reverse">
 
-  <p><strong>Required Core Courses</strong></p>
-  <ul>
-    <li>POLS 215 – Gender, Politics and Development in Latin America</li>
-    <li>POLS 230 – Exploring Latin American Politics</li>
-  </ul>
+  <div class="text">
+    <h2>Explore Development, Justice, and Social Change in Latin America</h2>
 
-  <p><strong>Plus four elective courses from different disciplines</strong></p>
-
-  <p>
-    Students customize the minor through courses in history, global affairs, economics, and the humanities. These courses explore migration, development, governance, inequality, and cultural identity across Latin America.
-  </p>
-</div>
-
-<!-- CAREER PATHWAYS (IMAGE LEFT HERE) -->
-<div class="section-split">
-  <img src="lads2.jpg" class="section-image">
-
-  <div class="section-text">
-    <h2>Career Pathways</h2>
-
-    <p>Graduates are prepared for careers and graduate study in:</p>
-
-    <ul>
-      <li>International development organizations</li>
-      <li>Public policy and government service</li>
-      <li>Nonprofit and humanitarian sectors</li>
-      <li>Human rights advocacy</li>
-      <li>Law, public policy, and global affairs</li>
-    </ul>
-  </div>
-</div>
-
-<!-- FINAL SECTION -->
-<div class="section">
-  <h2>Explore Development, Justice, and Social Change in Latin America</h2>
-
-  <p>
+    <p>
     This minor invites students to engage major debates about democracy, inequality, sustainability, and human rights with rigor, compassion, and intellectual curiosity.
-  </p>
+    </p>
 
-  <p>
+    <p>
     Students learn not only to understand development challenges, but also to ask why countries facing similar structural problems produce different outcomes and what those differences mean for policy, equity, and human dignity.
-  </p>
+    </p>
+  </div>
+
+  <div class="image">
+    <img src="lads2.jpg">
+  </div>
+
 </div>
 
 </div>
+
 </body>
 </html>
