@@ -46,10 +46,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* CONTACT LAYOUT */
-.contact-block {
+/* LAYOUT WITH IMAGE */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
   margin-top: 40px;
-  max-width: 700px;
+}
+
+/* IMAGE */
+.contact-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* CONTACT TEXT */
+.contact-block {
+  max-width: 600px;
 }
 
 .row {
@@ -66,7 +81,6 @@ nav a:hover {
   line-height: 1.8;
 }
 
-/* email link style */
 .value a {
   color: #111;
   text-decoration: none;
@@ -76,7 +90,17 @@ nav a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+/* MOBILE */
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
   .row {
     grid-template-columns: 1fr;
   }
@@ -106,34 +130,42 @@ nav a:hover {
 
 <main>
 
-<div class="contact-block">
+<div class="contact-container">
 
-  <div class="row">
-    <div class="label">Telephone:</div>
-    <div class="value">202-884-9267</div>
-  </div>
+  <!-- IMAGE -->
+  <img src="contact.jpg" alt="Contact image" class="contact-image">
 
-  <div class="row">
-    <div class="label">Email:</div>
-    <div class="value">
-      <a href="mailto:callenesm@trinitydc.edu">callenesm@trinitydc.edu</a>
+  <!-- CONTACT INFO -->
+  <div class="contact-block">
+
+    <div class="row">
+      <div class="label">Telephone:</div>
+      <div class="value">202-884-9267</div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="label">Office:</div>
-    <div class="value">
-      Main 327<br>
-      125 Michigan Ave. NE, Washington, DC 20017
+    <div class="row">
+      <div class="label">Email:</div>
+      <div class="value">
+        <a href="mailto:callenesm@trinitydc.edu">callenesm@trinitydc.edu</a>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="label">Institution:</div>
-    <div class="value">
-      Global Affairs Department<br>
-      Trinity Washington University
+    <div class="row">
+      <div class="label">Office:</div>
+      <div class="value">
+        Main 327<br>
+        125 Michigan Ave. NE, Washington, DC 20017
+      </div>
     </div>
+
+    <div class="row">
+      <div class="label">Institution:</div>
+      <div class="value">
+        Global Affairs Department<br>
+        Trinity Washington University
+      </div>
+    </div>
+
   </div>
 
 </div>
