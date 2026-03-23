@@ -1,17 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mercedez Callenes</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f3f1ee;
+  color: #111;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 36px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT LAYOUT */
+.contact-block {
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  line-height: 1.8;
+}
+
+/* email link style */
+.value a {
+  color: #111;
+  text-decoration: none;
+}
+
+.value a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .label {
+    margin-bottom: 4px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<header>
+  <h1>Contact</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="research.html">Research</a>
+    <a href="lads.html">LADS</a>
+    <a href="cv.pdf" target="_blank">CV</a>
+  </nav>
+</header>
+
+<main>
+
 <div class="contact-block">
 
   <div class="row">
-    <div class="label"><strong>Telephone:</strong></div>
+    <div class="label">Telephone:</div>
     <div class="value">202-884-9267</div>
   </div>
 
   <div class="row">
-    <div class="label"><strong>Email:</strong></div>
-    <div class="value">callenesm@trinitydc.edu</div>
+    <div class="label">Email:</div>
+    <div class="value">
+      <a href="mailto:callenesm@trinitydc.edu">callenesm@trinitydc.edu</a>
+    </div>
   </div>
 
   <div class="row">
-    <div class="label"><strong>Office:</strong></div>
+    <div class="label">Office:</div>
     <div class="value">
       Main 327<br>
       125 Michigan Ave. NE, Washington, DC 20017
@@ -19,7 +129,7 @@
   </div>
 
   <div class="row">
-    <div class="label"><strong>Institution:</strong></div>
+    <div class="label">Institution:</div>
     <div class="value">
       Global Affairs Department<br>
       Trinity Washington University
@@ -27,3 +137,9 @@
   </div>
 
 </div>
+
+</main>
+
+</div>
+</body>
+</html>
