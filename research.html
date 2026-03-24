@@ -79,7 +79,8 @@
       color: #444;
     }
 
-    .publications h2 {
+    .publications h2,
+    .conferences h2 {
       margin: 0 0 24px;
       font-size: 1.5rem;
       font-weight: 500;
@@ -87,13 +88,15 @@
       padding-bottom: 10px;
     }
 
-    .pub-list {
+    .pub-list,
+    .conf-list {
       list-style: none;
       margin: 0;
       padding: 0;
     }
 
-    .pub-list li {
+    .pub-list li,
+    .conf-list li {
       margin-bottom: 26px;
       padding-bottom: 20px;
       border-bottom: 1px solid #e1d9cb;
@@ -101,11 +104,13 @@
       line-height: 1.85;
     }
 
-    .pub-list li:last-child {
+    .pub-list li:last-child,
+    .conf-list li:last-child {
       border-bottom: none;
     }
 
-    .journal {
+    .journal,
+    .conf-details {
       display: block;
       margin-top: 6px;
       font-size: 0.98rem;
@@ -116,6 +121,10 @@
     .placeholder {
       color: #6b655d;
       font-style: italic;
+    }
+
+    .section-spacing {
+      margin-top: 50px;
     }
 
     @media (max-width: 900px) {
@@ -149,31 +158,40 @@
         <div class="caption">Composição e figuras, Emiliano di Cavalcanti, 1964</div>
       </aside>
 
-      <section class="publications">
-        <h2>Publications</h2>
-        <ul class="pub-list">
-          <li>
-            Barham, Bradford L., Mercedez Callenes, Seth Gitter, Jessa Lewis, and Jeremy Weber.
-            "Fair trade/organic coffee, rural livelihoods, and the agrarian question: Southern Mexican coffee families in transition."
-            <span class="journal">World Development 39, no. 1 (2011): 134-145.</span>
-          </li>
+      <div>
+        <section class="publications">
+  <h2>Publications</h2>
+  <ul class="pub-list">
+    <li>
+      Barham, Bradford L., Mercedez Callenes, Seth Gitter, Jessa Lewis, and Jeremy Weber.
+      "Fair trade/organic coffee, rural livelihoods, and the agrarian question: Southern Mexican coffee families in transition."
+      <span class="journal">World Development 39, no. 1 (2011): 134-145.</span>
+    </li>
 
-          <ul class="pub-list">
-          <li>
-            Gitter, Seth R., Jeremy G. Weber, Bradford L. Barham, Mercedez Callenes, and Jessa Lewis Valentine. 
-            "Fair trade-organic coffee cooperatives, migration, and secondary schooling in Southern Mexico." 
-            <span class="journal">Journal of Development Studies 48, no. 3 (2012): 445-463.</span>
-          </li>
+    <li>
+      Gitter, Seth R., Jeremy G. Weber, Bradford L. Barham, Mercedez Callenes, and Jessa Lewis Valentine.
+      "Fair trade-organic coffee cooperatives, migration, and secondary schooling in Southern Mexico."
+      <span class="journal">Journal of Development Studies 48, no. 3 (2012): 445-463.</span>
+    </li>
 
-          <li class="placeholder">
-            [Add your next paper citation here.]
-          </li>
+    <li class="placeholder">[Add your next paper citation here.]</li>
+    <li class="placeholder">[Add your next paper citation here.]</li>
+  </ul>
+</section>
 
-          <li class="placeholder">
-            [Add your next paper citation here.]
-          </li>
-        </ul>
-      </section>
+        <section class="conferences section-spacing">
+          <h2>Conferences</h2>
+          <ul class="conf-list">
+            <li>
+              [Title of presentation or paper].
+              <span class="conf-details">Conference Name, Location, Year.</span>
+            </li>
+
+            <li class="placeholder">[Add another conference presentation here.]</li>
+            <li class="placeholder">[Add another conference presentation here.]</li>
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
 </body>
