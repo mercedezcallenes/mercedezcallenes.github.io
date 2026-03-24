@@ -1,197 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Mercedez Callenes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mercedez Callenes</title>
 
-<style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f7f3eb;
+      color: #111;
+    }
 
-  .contact-image {
-  margin: 20px 0 40px;
-}
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 36px 60px;
+    }
 
-.contact-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 18px;
-  object-fit: cover;
-}
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
 
-  
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background: #f7f3eb;
-  color: #111;
-}
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
 
-.page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 48px 36px;
-}
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding-top: 10px;
+    }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 1rem;
+    }
 
-h1 {
-  margin: 0;
-  font-weight: 500;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-nav {
-  display: flex;
-  gap: 24px;
- 
-  font-family: "Georgia", serif;
+    /* IMAGE BANNER */
+    .contact-image {
+      margin: 20px 0 40px;
+    }
 
-}
+    .contact-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+    }
 
-nav a {
-  text-decoration: none;
-  color: #111;
-}
+    /* CONTACT INFO */
+    .content {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-}
+    .item {
+      margin-bottom: 24px;
+    }
 
-/* LAYOUT WITH IMAGE */
-.contact-container {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-top: 40px;
-}
-
-/* IMAGE */
-.contact-image {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-/* CONTACT TEXT */
-.contact-block {
-  max-width: 600px;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  margin-bottom: 20px;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.value {
-  line-height: 1.8;
-}
-
-.value a {
-  color: #111;
-  text-decoration: none;
-}
-
-.value a:hover {
-  text-decoration: underline;
-}
-
-/* MOBILE */
-@media (max-width: 800px) {
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .row {
-    grid-template-columns: 1fr;
-  }
-
-  .label {
-    margin-bottom: 4px;
-  }
-}
-</style>
+    .label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
 </head>
 
 <body>
-<div class="page">
+  <div class="page">
 
-<header>
-  <h1>Contact</h1>
-
- <div class="contact-image">
-  <img src="contact.png" alt="Trinity Washington University">
-</div> 
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="research.html">Research</a>
-    <a href="lads.html">LADS</a>
-    <a href="cv.pdf" target="_blank">CV</a>
-  </nav>
-</header>
-
-<main>
-
-<div class="contact-container">
-
-  <!-- IMAGE -->
-  <img src="contact.jpg" alt="Contact image" class="contact-image">
-
-  <!-- CONTACT INFO -->
-  <div class="contact-block">
-
-    <div class="row">
-      <div class="label">Telephone:</div>
-      <div class="value">202-884-9267</div>
+    <div class="top">
+      <h1>Contact</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="research.html">Research</a>
+        <a href="lads.html">LADS</a>
+        <a href="cv.html">CV</a>
+      </nav>
     </div>
 
-    <div class="row">
-      <div class="label">Email:</div>
-      <div class="value">
-        <a href="mailto:callenesm@trinitydc.edu">callenesm@trinitydc.edu</a>
+    <!-- IMAGE -->
+    <div class="contact-image">
+      <img src="contact.png" alt="Trinity Washington University">
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="content">
+
+      <div class="item">
+        <span class="label">Telephone:</span>
+        202-884-9267
       </div>
-    </div>
 
-    <div class="row">
-      <div class="label">Office:</div>
-      <div class="value">
+      <div class="item">
+        <span class="label">Email:</span>
+        callenesm@trinitydc.edu
+      </div>
+
+      <div class="item">
+        <span class="label">Office:</span>
         Main 327<br>
         125 Michigan Ave. NE, Washington, DC 20017
       </div>
-    </div>
 
-    <div class="row">
-      <div class="label">Institution:</div>
-      <div class="value">
+      <div class="item">
+        <span class="label">Institution:</span>
         Global Affairs Department<br>
         Trinity Washington University
       </div>
+
     </div>
 
   </div>
-
-</div>
-
-</main>
-
-</div>
 </body>
 </html>
