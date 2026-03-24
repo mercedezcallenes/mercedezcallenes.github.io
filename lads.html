@@ -133,30 +133,37 @@
     }
 
     .flyer-links a {
-      display: inline-block;
-      padding: 10px 16px;
-      border-radius: 999px;
-      text-decoration: none;
-      color: #3f3428;
-      font-size: 1rem;
-      border: 1px solid #d8c7b4;
-      background: #f3ddd7;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #3f3428;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
 
-    .flyer-links a:nth-child(2) { background: #eadfcf; }
-    .flyer-links a:nth-child(3) { background: #dfe8d6; }
-    .flyer-links a:nth-child(4) { background: #d9e7e8; }
-    .flyer-links a:nth-child(5) { background: #e4ddf2; }
-    .flyer-links a:nth-child(6) { background: #f1e2cc; }
-    .flyer-links a:nth-child(7) { background: #dbe7d3; }
-    .flyer-links a:nth-child(8) { background: #f0d9df; }
+/* Each button gets a UNIQUE soft earth tone */
 
-    .flyer-links a:hover {
-      background: #e8d8c8;
-      transform: translateY(-1px);
-    }
+.flyer-links a:nth-child(1) { background: #e8cfc7; } /* dusty rose */
+.flyer-links a:nth-child(2) { background: #e6d8c3; } /* warm sand */
+.flyer-links a:nth-child(3) { background: #dbe6d3; } /* sage green */
+.flyer-links a:nth-child(4) { background: #d6e3e5; } /* soft teal */
+.flyer-links a:nth-child(5) { background: #e3d9f0; } /* lavender clay */
+.flyer-links a:nth-child(6) { background: #f0e0c9; } /* light ochre */
+.flyer-links a:nth-child(7) { background: #d7e2d2; } /* olive mist */
+.flyer-links a:nth-child(8) { background: #efd6db; } /* muted pink clay */
 
+/* Hover (subtle, consistent) */
+.flyer-links a:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.96);
+}
+
+    .flyer-links {
+  margin-top: 24px;
+  max-width: 700px;
+}
     @media (max-width: 860px) {
       .section,
       .section.reverse {
