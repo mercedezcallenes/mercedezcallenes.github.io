@@ -16,7 +16,7 @@
     .page {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 48px 36px 60px;
+      padding: 60px 36px 80px;
     }
 
     .top {
@@ -24,20 +24,20 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       flex-wrap: wrap;
     }
 
     h1 {
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: 500;
       letter-spacing: 0.02em;
     }
 
     nav {
       display: flex;
-      gap: 24px;
+      gap: 28px;
       flex-wrap: wrap;
       padding-top: 10px;
     }
@@ -45,7 +45,6 @@
     nav a {
       text-decoration: none;
       color: #111;
-      font-family: Georgia, serif;
       font-size: 1rem;
     }
 
@@ -53,83 +52,95 @@
       text-decoration: underline;
     }
 
+    /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 36px;
-      align-items: start;
-      margin-bottom: 60px;
+      grid-template-columns: 360px 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .hero-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .hero-image img {
       width: 100%;
+      border-radius: 16px;
       display: block;
-      border-radius: 14px;
     }
 
     .caption {
-      margin-top: 8px;
-      font-size: 0.88rem;
-      line-height: 1.45;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      line-height: 1.5;
       font-style: italic;
       color: #555;
       text-align: center;
+      max-width: 320px;
     }
 
-    .hero-text p,
-    .section p {
-      font-size: 1.08rem;
-      line-height: 1.85;
-      margin-top: 0;
-      margin-bottom: 18px;
+    .hero-text {
+      max-width: 640px;
     }
 
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      margin-bottom: 22px;
+    }
+
+    /* SECTION TITLES */
     h2 {
-      margin: 0 0 18px;
       font-size: 1.6rem;
       font-weight: 500;
+      margin-bottom: 20px;
+      padding-bottom: 6px;
       border-bottom: 1px solid #d7cfc1;
-      padding-bottom: 8px;
     }
 
     .section {
-      margin-bottom: 60px;
+      margin-bottom: 80px;
     }
 
+    /* LIST */
     .student-highlights {
-      max-width: 920px;
+      max-width: 900px;
     }
 
     .student-highlights ul {
-      margin: 0;
       padding-left: 22px;
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       line-height: 1.9;
     }
 
     .student-highlights li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
+    /* GRADUATES */
     .graduates-intro {
-      max-width: 900px;
-      margin-bottom: 28px;
+      max-width: 850px;
+      margin-bottom: 40px;
     }
 
     .graduates-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(280px, 1fr));
-      gap: 28px 30px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
     }
 
     .graduate-card {
       display: flex;
-      gap: 18px;
+      gap: 20px;
       align-items: flex-start;
       background: #fbf7f0;
       border: 1px solid #e3dbcf;
-      border-radius: 18px;
-      padding: 20px;
+      border-radius: 20px;
+      padding: 24px;
     }
 
     .graduate-card img {
@@ -137,11 +148,10 @@
       height: 110px;
       border-radius: 50%;
       object-fit: cover;
-      flex-shrink: 0;
     }
 
     .graduate-card h3 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-size: 1.15rem;
       font-weight: 500;
     }
@@ -149,24 +159,21 @@
     .graduate-card p {
       margin: 0;
       font-size: 1rem;
-      line-height: 1.7;
-      color: #222;
+      line-height: 1.75;
     }
 
     .closing-note {
-      max-width: 900px;
-      margin-top: 36px;
+      max-width: 850px;
+      margin-top: 50px;
       font-size: 1.05rem;
-      line-height: 1.85;
+      line-height: 1.9;
     }
 
+    /* MOBILE */
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
-      }
-
-      .hero-image {
-        max-width: 420px;
+        gap: 40px;
       }
 
       .graduates-grid {
@@ -176,26 +183,17 @@
 
     @media (max-width: 620px) {
       .page {
-        padding: 32px 20px 42px;
+        padding: 40px 20px 60px;
       }
 
       h1 {
-        font-size: 2rem;
-      }
-
-      .graduate-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-      }
-
-      .graduate-card img {
-        width: 120px;
-        height: 120px;
+        font-size: 2.1rem;
       }
     }
+
   </style>
 </head>
+
 <body>
   <div class="page">
 
@@ -212,9 +210,10 @@
       </nav>
     </div>
 
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-image">
-        <img src="LADS-students.jpg" alt="LADS students in POLS 230 Exploring Latin American Politics">
+        <img src="LADS-students.jpg">
         <div class="caption">
           POLS 230 Exploring Latin American Politics (Fall 2025), LADS Minor – Global Affairs Department at Trinity Washington University
         </div>
@@ -222,88 +221,84 @@
 
       <div class="hero-text">
         <h2>Students</h2>
+
         <p>
-          Students in the Latin American Development Studies minor engage Latin America through an interdisciplinary lens that brings together politics, development, gender, migration, environment, culture, and social justice. The program is designed to help students connect classroom learning to the major challenges facing the region and to broader global questions about inequality, democracy, and human dignity.
+          Students in the Latin American Development Studies minor engage Latin America through an interdisciplinary lens that brings together politics, development, gender, migration, environment, culture, and social justice.
         </p>
 
         <p>
-          LADS students strengthen their analytical, writing, and research skills while developing a deeper understanding of Latin America’s historical trajectories and contemporary realities. Through coursework, faculty mentoring, and discussion-based learning, students are encouraged to think critically, communicate clearly, and apply their knowledge to real-world issues.
+          The program encourages students to connect classroom learning to the major challenges facing the region and to broader global questions about inequality, democracy, and human dignity.
         </p>
 
         <p>
-          Many students in the minor pursue projects that reflect Trinity’s mission of ethical leadership and engaged learning. Their interests often include migration, gender and development, environmental justice, indigenous rights, democratic participation, and the social consequences of economic change. The minor complements a wide range of majors and supports students as they prepare for graduate study, public service, nonprofit work, advocacy, and internationally oriented careers.
+          Through coursework and faculty mentoring, students develop strong analytical and communication skills while exploring issues such as migration, environmental justice, indigenous rights, and development policy.
+        </p>
+
+        <p>
+          The minor complements a wide range of majors and supports students as they prepare for graduate study, public service, nonprofit work, and globally oriented careers.
         </p>
       </div>
     </section>
 
+    <!-- ENGAGEMENT -->
     <section class="section student-highlights">
       <h2>Student Engagement</h2>
-      <p>
-        LADS students participate in a wide variety of intellectually and professionally enriching experiences. These may include:
-      </p>
+
       <ul>
-        <li>Faculty-mentored research on Latin America and global development</li>
-        <li>Class presentations and independent analytical projects</li>
-        <li>Conference participation and public-facing academic work</li>
-        <li>Interdisciplinary conversations linking policy, history, economics, and culture</li>
-        <li>Critical reflection on social justice, sustainability, and civic responsibility</li>
+        <li>Faculty-mentored research</li>
+        <li>Conference presentations</li>
+        <li>Community engagement</li>
+        <li>Interdisciplinary learning</li>
+        <li>Focus on social justice and sustainability</li>
       </ul>
-      <p>
-        Student work in the minor reflects curiosity, purpose, and a willingness to examine how local realities in Latin America connect to wider regional and global processes.
-      </p>
     </section>
 
+    <!-- GRADUATES -->
     <section class="section">
       <h2>Graduates</h2>
 
       <div class="graduates-intro">
         <p>
-          LADS graduates carry this interdisciplinary preparation into graduate school, public service, nonprofit work, research, and community-based leadership. Their experiences in the minor help them develop a broader international perspective while remaining grounded in the human dimensions of policy and development.
-        </p>
-
-        <p>
-          The stories below illustrate the kinds of paths LADS students can pursue. As this page continues to grow, it will highlight the accomplishments of graduates whose work can inspire current and future students.
+          LADS graduates pursue diverse paths in graduate study, public service, nonprofit work, and policy. Their experience in the minor provides a strong interdisciplinary foundation and a deep understanding of Latin America.
         </p>
       </div>
 
       <div class="graduates-grid">
-        <div class="graduate-card">
-          <img src="images/student1.jpg" alt="Ana Martínez">
-          <div>
-            <h3>.....</h3>
-            <p>
-              ....
-            </p>
-          </div>
-        </div>
-
-
 
         <div class="graduate-card">
-          <img src="images/student3.jpg" alt="Sofía López">
+          <img src="images/student1.jpg">
           <div>
             <h3>.....</h3>
-            <p>
-              ....
+            <p>....</p>
           </div>
         </div>
 
         <div class="graduate-card">
-          <img src="images/student4.jpg" alt="Future graduate profile">
+          <img src="images/student3.jpg">
+          <div>
+            <h3>.....</h3>
+            <p>....</p>
+          </div>
+        </div>
+
+        <div class="graduate-card">
+          <img src="images/student4.jpg">
           <div>
             <h3>Your Story Here</h3>
             <p>
-              This space is reserved for future LADS graduates. As the program grows, this page will celebrate the academic and professional journeys of students whose work demonstrates the value of interdisciplinary study, regional expertise, and a deep commitment to justice and service.
+              This space is reserved for future LADS graduates who will inspire new students through their journeys.
             </p>
           </div>
         </div>
+
       </div>
 
       <div class="closing-note">
         <p>
-          If you are a LADS graduate and would like to be featured on this page, please consider sending a photo and a brief update about what you are doing now. Your story can help inspire other students as they think about how the minor can shape their own academic and professional paths.
+          If you are a LADS graduate and would like to be featured, please send a photo and a short update. Your story can inspire future students.
         </p>
       </div>
+
     </section>
 
   </div>
