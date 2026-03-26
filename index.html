@@ -12,59 +12,61 @@
       color: #111;
     }
 
-.site-title {
-  margin: 70px 0 50px 0;
-}
-    
     .page {
       max-width: 1100px;
       margin: 0 auto;
       padding: 48px 36px 30px;
     }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 70px;
+    }
 
-/* NAME */
-.site-title {
-  font-size: 3.1rem;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: 0;
-  white-space: nowrap;     /* keeps PhD on same line */
-  flex-shrink: 0;          /* prevents squeezing */
-}
+    .site-title {
+      font-size: 3.1rem;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 45px 0 0 0;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
 
-/* NAV */
-.main-nav {
-  display: flex;
-  gap: 42px;
-}
+    .main-nav {
+      display: flex;
+      gap: 42px;
+      align-items: center;
+      margin-top: 18px;
+    }
 
-.main-nav a {
-  text-decoration: none;
-  color: #111;
-  font-size: 1.1rem;
-}
+    .main-nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
 
-.main-nav a:hover {
-  text-decoration: underline;
-}
+    .main-nav a:hover {
+      text-decoration: underline;
+    }
 
-.circle-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px 80px;
-  justify-items: center;
-  align-items: center;
-  max-width: 620px;
-  margin: 40px auto 70px;
-}
+    main {
+      margin-top: 40px;
+    }
+
+    .circle-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 80px;
+      justify-items: center;
+      align-items: center;
+      max-width: 620px;
+      margin: 0 auto 70px;
+    }
 
     .circle-link {
       text-decoration: none;
@@ -97,12 +99,12 @@ header {
     }
 
     .circle-label {
-  margin-top: 14px;
-  font-family: "Georgia", serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.6px;
-  font-weight: 500;
-}
+      margin-top: 14px;
+      font-family: "Georgia", serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.6px;
+      font-weight: 500;
+    }
 
     .subtitle {
       text-align: center;
@@ -117,6 +119,18 @@ header {
     @media (max-width: 900px) {
       header {
         flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+      }
+
+      .site-title {
+        margin-top: 20px;
+      }
+
+      .main-nav {
+        margin-top: 0;
+        gap: 28px;
+        flex-wrap: wrap;
       }
 
       .circle-grid {
@@ -131,6 +145,7 @@ header {
 
       .site-title {
         font-size: 2.3rem;
+        white-space: normal;
       }
 
       .circle-grid {
@@ -142,56 +157,27 @@ header {
         height: 220px;
       }
 
-      nav {
+      .main-nav {
         gap: 18px;
       }
-      nav {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-}
-
-.nav-stacked {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: #111;
-  line-height: 1.1;
-}
-
-.nav-stacked span {
-  font-size: 1rem;
-}
-
-.nav-stacked small {
-  font-size: 0.8rem;
-  color: #666;
-}
-
-.nav-stacked:hover small {
-  text-decoration: underline;
-}
     }
   </style>
 </head>
 <body>
   <div class="page">
- 
-<header>
-  <h1 class="site-title">Mercedez Callenes, PhD</h1>
 
-  <nav class="main-nav">
-    <a href="lads.html">LADS</a>
-    <a href="lads-students.html">LADS Students & Graduates</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <header>
+      <h1 class="site-title">Mercedez Callenes, PhD</h1>
+
+      <nav class="main-nav">
+        <a href="lads.html">LADS</a>
+        <a href="lads-students.html">LADS Students &amp; Graduates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
     <main>
       <div class="circle-grid">
-        .content {
-  margin-top: 60px;
-}
         <a class="circle-link" href="about.html">
           <div class="circle">
             <img src="about.jpg" alt="About">
@@ -219,8 +205,6 @@ header {
           </div>
           <div class="circle-label">LADS</div>
         </a>
-
-        
       </div>
 
       <p class="subtitle">
