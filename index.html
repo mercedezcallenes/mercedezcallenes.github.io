@@ -141,6 +141,32 @@
       nav {
         gap: 18px;
       }
+      nav {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.nav-stacked {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #111;
+  line-height: 1.1;
+}
+
+.nav-stacked span {
+  font-size: 1rem;
+}
+
+.nav-stacked small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.nav-stacked:hover small {
+  text-decoration: underline;
+}
     }
   </style>
 </head>
@@ -149,15 +175,21 @@
     <header>
     <h1 class="site-title">Mercedez Callenes, PhD</h1>
 
-      
       <nav>
   <a href="about.html">About</a>
   <a href="teaching.html">Teaching</a>
   <a href="research.html">Research</a>
+
   <a href="lads.html">LADS</a>
-  <a href="lads-students-graduates.html">LADS Students and Graduates</a>
+
+  <a href="lads-students.html" class="nav-stacked">
+    <span>LADS</span>
+    <small>Students & Graduates</small>
+  </a>
+
   <a href="contact.html">Contact</a>
 </nav>
+     
     </header>
 
     <main>
