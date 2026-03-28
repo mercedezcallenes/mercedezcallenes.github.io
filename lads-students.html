@@ -64,7 +64,6 @@
       margin-bottom: 80px;
     }
 
-    /* HERO */
     .hero {
       display: grid;
       grid-template-columns: 380px 1fr;
@@ -101,7 +100,6 @@
       margin: 0 0 22px 0;
     }
 
-    /* STUDENT HIGHLIGHTS */
     .student-highlights {
       max-width: 950px;
     }
@@ -117,9 +115,8 @@
       margin-bottom: 10px;
     }
 
-    /* GRADUATES */
     .graduates-intro {
-      max-width: 950px;
+      max-width: 1000px;
       margin-bottom: 40px;
     }
 
@@ -129,7 +126,7 @@
       margin: 0;
     }
 
-    .graduates-grid {
+    .graduates-list {
       display: flex;
       flex-direction: column;
       gap: 36px;
@@ -161,7 +158,11 @@
       display: block;
     }
 
-    .graduate-content h3 {
+    .graduate-text {
+      width: 100%;
+    }
+
+    .graduate-text h3 {
       margin: 0;
       font-size: 2rem;
       font-weight: 500;
@@ -174,19 +175,18 @@
       color: #6b6257;
     }
 
-    .graduate-content p {
+    .graduate-text p {
       margin: 0 0 16px 0;
       font-size: 1.08rem;
       line-height: 1.9;
-      max-width: 100%;
     }
 
-    .graduate-content p:last-child {
+    .graduate-text p:last-child {
       margin-bottom: 0;
     }
 
     .closing-note {
-      max-width: 950px;
+      max-width: 1000px;
       margin-top: 55px;
     }
 
@@ -196,15 +196,10 @@
       line-height: 1.9;
     }
 
-    /* MOBILE */
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
         gap: 40px;
-      }
-
-      .graduates-grid {
-        gap: 28px;
       }
 
       .graduate-card {
@@ -222,7 +217,7 @@
         height: 250px;
       }
 
-      .graduate-content h3 {
+      .graduate-text h3 {
         font-size: 1.6rem;
       }
     }
@@ -242,7 +237,7 @@
 
       .hero-text p,
       .graduates-intro p,
-      .graduate-content p,
+      .graduate-text p,
       .closing-note p,
       .student-highlights ul {
         font-size: 1rem;
@@ -317,14 +312,14 @@
         </p>
       </div>
 
-      <div class="graduates-grid">
+      <div class="graduates-list">
 
         <div class="graduate-card">
           <div class="graduate-photo">
             <img src="LADS-graduate1.jpg" alt="Lakshmi Mosquera Herrera">
           </div>
 
-          <div class="graduate-content">
+          <div class="graduate-text">
             <h3>Lakshmi Mosquera Herrera</h3>
             <p class="graduate-meta">TWU Graduate, 2025.</p>
 
@@ -347,7 +342,7 @@
             <img src="LADS-graduate2.jpg" alt="Future LADS graduate">
           </div>
 
-          <div class="graduate-content">
+          <div class="graduate-text">
             <h3>Your Story Here</h3>
             <p class="graduate-meta">Future LADS Graduate</p>
 
