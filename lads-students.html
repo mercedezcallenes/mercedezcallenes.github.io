@@ -14,7 +14,7 @@
     }
 
     .page {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 60px 36px 80px;
     }
@@ -52,10 +52,22 @@
       text-decoration: underline;
     }
 
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin: 0 0 22px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d7cfc1;
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
     /* HERO */
     .hero {
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 380px 1fr;
       gap: 60px;
       align-items: center;
       margin-bottom: 80px;
@@ -80,41 +92,25 @@
       font-style: italic;
       color: #555;
       text-align: center;
-      max-width: 320px;
-    }
-
-    .hero-text {
-      max-width: 640px;
+      max-width: 340px;
     }
 
     .hero-text p {
       font-size: 1.1rem;
       line-height: 1.9;
-      margin-bottom: 22px;
+      margin: 0 0 22px 0;
     }
 
-    /* SECTION TITLES */
-    h2 {
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin-bottom: 20px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #d7cfc1;
-    }
-
-    .section {
-      margin-bottom: 80px;
-    }
-
-    /* LIST */
+    /* STUDENT HIGHLIGHTS */
     .student-highlights {
-      max-width: 900px;
+      max-width: 950px;
     }
 
     .student-highlights ul {
-      padding-left: 22px;
+      padding-left: 24px;
       font-size: 1.08rem;
       line-height: 1.9;
+      margin: 0;
     }
 
     .student-highlights li {
@@ -123,45 +119,79 @@
 
     /* GRADUATES */
     .graduates-intro {
-      max-width: 850px;
+      max-width: 950px;
       margin-bottom: 40px;
     }
 
+    .graduates-intro p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      margin: 0;
+    }
+
     .graduates-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
       gap: 36px;
     }
 
-   .graduate-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.graduate-card img {
-  width: 160px;
-  height: 160px;
-  object-fit: contain;
-  border-radius: 12px;
-  background-color: #f0ebe5;
-}
-
-    .graduate-card h3 {
-      margin: 0 0 10px;
-      font-size: 1.15rem;
-      font-weight: 500;
+    .graduate-card {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 42px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid #d8d0c8;
+      border-radius: 24px;
+      background: #faf7f2;
     }
 
-    .graduate-card p {
+    .graduate-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .graduate-photo img {
+      width: 220px;
+      height: 280px;
+      object-fit: contain;
+      border-radius: 16px;
+      background-color: #efe8df;
+      display: block;
+    }
+
+    .graduate-content h3 {
       margin: 0;
-      font-size: 1rem;
-      line-height: 1.75;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .graduate-meta {
+      margin: 8px 0 18px 0;
+      font-size: 1.05rem;
+      color: #6b6257;
+    }
+
+    .graduate-content p {
+      margin: 0 0 16px 0;
+      font-size: 1.08rem;
+      line-height: 1.9;
+      max-width: 100%;
+    }
+
+    .graduate-content p:last-child {
+      margin-bottom: 0;
     }
 
     .closing-note {
-      max-width: 850px;
-      margin-top: 50px;
+      max-width: 950px;
+      margin-top: 55px;
+    }
+
+    .closing-note p {
+      margin: 0;
       font-size: 1.05rem;
       line-height: 1.9;
     }
@@ -174,7 +204,26 @@
       }
 
       .graduates-grid {
+        gap: 28px;
+      }
+
+      .graduate-card {
         grid-template-columns: 1fr;
+        gap: 26px;
+        padding: 26px;
+      }
+
+      .graduate-photo {
+        justify-content: flex-start;
+      }
+
+      .graduate-photo img {
+        width: 200px;
+        height: 250px;
+      }
+
+      .graduate-content h3 {
+        font-size: 1.6rem;
       }
     }
 
@@ -186,8 +235,19 @@
       h1 {
         font-size: 2.1rem;
       }
-    }
 
+      nav {
+        gap: 18px;
+      }
+
+      .hero-text p,
+      .graduates-intro p,
+      .graduate-content p,
+      .closing-note p,
+      .student-highlights ul {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 
@@ -207,10 +267,9 @@
       </nav>
     </div>
 
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-image">
-        <img src="LADS-students.jpg">
+        <img src="LADS-students.jpg" alt="LADS students">
         <div class="caption">
           POLS 230 Exploring Latin American Politics (Fall 2025), LADS Minor – Global Affairs Department at Trinity Washington University
         </div>
@@ -228,7 +287,7 @@
         </p>
 
         <p>
-          Through coursework and faculty mentoring, students develop strong analytical and communication skills while exploring issues such as migration, environmental justice, indigenous rights, and development policy.
+          Through coursework and faculty mentoring, students develop strong analytical and communication skills while exploring issues such as migration, environmental justice, Indigenous rights, and development policy.
         </p>
 
         <p>
@@ -237,7 +296,6 @@
       </div>
     </section>
 
-    <!-- ENGAGEMENT -->
     <section class="section student-highlights">
       <h2>Student Engagement</h2>
 
@@ -250,7 +308,6 @@
       </ul>
     </section>
 
-    <!-- GRADUATES -->
     <section class="section">
       <h2>Graduates</h2>
 
@@ -263,26 +320,50 @@
       <div class="graduates-grid">
 
         <div class="graduate-card">
-         <img src="LADS-graduate1.jpg" alt="LADS graduate">
-          <div>
-            <h3>Lakshmi Mosquera Herrera </h3>
-            <p>The Latin American Development Studies (LADS) minor gave me a strong foundation for my current move into the world of professional policy. I learned a lot about the region's complicated power dynamics and political structures in core classes like POLS 230: Exploring Latin American Politics and POLS 215: Gender, Politics, and Development in Latin America.
-This interdisciplinary approach enabled me to concentrate on the intersectional domains, including gender equity and institutional reform, that are crucial for formulating effective, evidence-based policy. The analytical lens I learned through the LADS minor is still a big part of how I do my job in global affairs now. It has influenced my trajectory by guaranteeing that my forthcoming endeavors in public service are guided by a sophisticated, regionally-informed understanding of development and justice.
-</p>
+          <div class="graduate-photo">
+            <img src="LADS-graduate1.jpg" alt="Lakshmi Mosquera Herrera">
+          </div>
+
+          <div class="graduate-content">
+            <h3>Lakshmi Mosquera Herrera</h3>
+            <p class="graduate-meta">TWU Graduate, 2025.</p>
+
+            <p>
+              The Latin American Development Studies minor gave me a strong foundation for my current move into the world of professional policy. Through courses such as POLS 230: Exploring Latin American Politics and POLS 215: Gender, Politics, and Development in Latin America, I developed a deeper understanding of the region’s complex political structures, social inequalities, and power dynamics.
+            </p>
+
+            <p>
+              The interdisciplinary nature of the program allowed me to think carefully about the intersection of gender equity, institutional reform, and social justice. It helped me strengthen the analytical perspective that I now bring to my work in global affairs and policy.
+            </p>
+
+            <p>
+              The LADS minor has had a lasting impact on my professional trajectory. It continues to shape how I approach public service and reinforces the importance of policy that is evidence-based, historically informed, and grounded in a regionally specific understanding of development and justice.
+            </p>
           </div>
         </div>
 
-       
+        <div class="graduate-card">
+          <div class="graduate-photo">
+            <img src="LADS-graduate2.jpg" alt="Future LADS graduate">
+          </div>
 
-      
+          <div class="graduate-content">
+            <h3>Your Story Here</h3>
+            <p class="graduate-meta">Future LADS Graduate</p>
 
+            <p>
+              This space is reserved for future LADS graduates who will inspire new students through their academic, professional, and personal journeys.
+            </p>
+          </div>
+        </div>
+
+      </div>
 
       <div class="closing-note">
         <p>
           If you are a LADS graduate and would like to be featured, please send a photo and a short update. Your story can inspire future students.
         </p>
       </div>
-
     </section>
 
   </div>
